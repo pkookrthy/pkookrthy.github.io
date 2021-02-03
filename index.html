@@ -7,15 +7,15 @@
     <script lang="javascript">
             var pre, usr, res8 , res16 , res32 
         var minit = function(){
-            pre = document.getElementById("pre").value
-            usr = document.getElementById("usr").value
+            pre = document.getElementById("pre")
+            usr = document.getElementById("usr")
             res8 = document.getElementById("res8")
             res16 = document.getElementById("res16")
             res32 = document.getElementById("res32")
         }
         var give_my_pass = function() {
 
-            var tmp = CryptoJS.SHA1(CryptoJS.SHA1(pre) + "-" + usr) + ""
+            var tmp = CryptoJS.SHA1(CryptoJS.SHA1(pre.value) + "-" + usr.value) + ""
             var tmp2 = CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(tmp))
             res8.value = tmp2.substring(0, 8)
             res16.value = tmp2.substring(0, 16)
