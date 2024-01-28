@@ -1,0 +1,25 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  /* min-height: 100%; */
+  /* height: auto !important; */
+  /* background-image: linear-gradient(to bottom right, #10414D, #D3E3DD); */
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+
+.mcanvas {
+  /* border-radius: 10%; */
+  margin: 0;
+  padding: 0;
+}
